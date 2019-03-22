@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wish List</title>
+</head>
+<body>
+    <h1>Add Wish</h1>
+    <form action="." method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <!-- <textarea name="" id="" cols="30" rows="10">What's your wish?</textarea> -->
+        <button type="submit" value="submit">Add Wish</button>
+    </form>
+
+</body>
+<footer>All Rights Reserved, &copy; 2019 Wish LIst</footer>
+</html>

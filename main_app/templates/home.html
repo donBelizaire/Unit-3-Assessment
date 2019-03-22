@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wish List</title>
+</head>
+<body>
+    <h1>Wish List</h1>
+
+    {% for w in wishes %}
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">Wish</span>
+                <p>Description: {{ wishes.description }}</p>
+            </div>
+        </div>
+        {% endfor %}
+        <button><a href="/add">New Wish</a></button>
+</body>
+<footer>All Rights Reserved, &copy; 2019 Wish LIst</footer>
+</html>
